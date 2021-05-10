@@ -29,8 +29,14 @@ function app(counter) {
         console.clear()
         console.log(view(counter))
         let des = prompt('What would you do? : ')
-        const msg = des
-        counter = update(msg, counter)
+        if (des === 'q') {
+            break
+        } else {
+            const msg = des
+            counter = update(msg, counter)
+
+        }
+
     }
 
 }
