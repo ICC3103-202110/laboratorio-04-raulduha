@@ -1,6 +1,7 @@
 var prompt = require('prompt-sync')();
 var counter = 0;
 
+
 function view(counter) {
     return 'Count = ' + counter + '\n' +
         '\n' +
